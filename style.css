@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.main-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d2b1b8;
+    position: relative;
+}
+
+.inner-sec {
+    display: flex;
+    height: 80vh;
+
+}
+
+.side-bar {
+    width: 8vw;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+    cursor: pointer;
+}
+
+.start {
+    position: absolute;
+    top: 8px;
+}
+
+.center>ul {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.center>ul>li {
+    list-style: none;
+}
+
+.end {
+    position: absolute;
+    bottom: 3px;
+}
+
+.image {
+    width: 40vw;
+    height: 90vh;
+    box-shadow: rgb(241, 241, 241) 0px 20px 30px -10px;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    /* position: absolute; */
+    transform: translateY(-20px);
+
+}
+
+.image>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+
+}
+
+.info-sec {
+    width: 50vw;
+}
+
+.info-sec>.intro-pera {
+    /* background-color: red; */
+    padding: 1rem;
+    position: relative;
+
+}
+
+.info-sec>.intro-pera>p {
+    text-align: justify;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+}
+
+.info-sec>.intro-pera::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 182px;
+    background-color: grey;
+    bottom: -6px;
+}
+
+.info-sec>.intro-pera::after {
+    content: '';
+    height: 139px;
+    width: 4px;
+    background-color: grey;
+    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
+    right: -2px;
+    top: -1px;
+  }
+
+  .skill-sec{
+      margin: 1rem;
+  }
+
+
+  .main-skills{
+      /* background-color: red; */
+      cursor: pointer;
+      margin-top: 0.6rem;
+      display: flex;
+      justify-content: space-around;
+      gap: 5px;
+      text-align: center;
+  }
+
+  .skill-one{
+      border: 1px solid black;
+      padding: 1rem;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      border-radius: 10px;
+
+  }
+
+  .skill-two{
+     border: 1px solid black;
+      padding: 1rem;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      border-radius: 10px;
+  }
+.icon-skill1,.icon-skill2{
+    margin: 0.2rem;
+
+}
+
+.skill-one >h3,.skill-two >h3{
+    margin: 0.3rem;
+    font-size: 1.1rem;
+}
+
+.skill-one > p,.skill-two>p{
+    font-size: 0.8rem;
+    text-align: justify;
+    line-height: 0.8rem
+}
